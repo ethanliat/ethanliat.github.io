@@ -12,18 +12,18 @@
   </head>
   <body>
     <nav
-      class="text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 relative flex w-full flex-nowrap items-center justify-between bg-[#FBFBFB] py-2 shadow-lg lg:flex-wrap lg:justify-start lg:py-4"
+      class="relative flex w-full flex-nowrap items-center justify-between bg-[#FBFBFB] py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:flex-wrap lg:justify-start lg:py-4"
       data-te-navbar-ref
     >
       <div class="flex w-full flex-wrap items-center justify-between px-3">
         <div class="ml-2">
-          <a class="text-neutral-800 dark:text-neutral-200 text-xl" href="#"
+          <a class="text-xl text-neutral-800 dark:text-neutral-200" href="#"
             >Navbar</a
           >
         </div>
         <!-- Hamburger button for mobile view -->
         <button
-          class="bg-transparent text-neutral-500 dark:text-neutral-200 block border-0 px-2 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden"
+          class="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
           type="button"
           data-te-collapse-init
           data-te-target="#navbarSupportedContent14"
@@ -62,7 +62,7 @@
             <!-- Home link -->
             <li class="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1" data-te-nav-item-ref>
               <a
-                class="active disabled:text-black/30 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 lg:px-2"
+                class="active disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
                 aria-current="page"
                 href="#"
                 data-te-nav-link-ref
@@ -72,7 +72,7 @@
             <!-- Link -->
             <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1" data-te-nav-item-ref>
               <a
-                class="text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 p-0 transition duration-200 hover:ease-in-out motion-reduce:transition-none lg:px-2"
+                class="p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
                 href="#"
                 data-te-nav-link-ref
                 >Link</a
@@ -81,7 +81,7 @@
             <!-- Disabled link -->
             <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1" data-te-nav-link-ref>
               <a
-                class="text-black/30 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 lg:px-2"
+                class="text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
                 >Disabled</a
               >
             </li>
@@ -90,7 +90,7 @@
             <div class="relative flex w-full flex-wrap items-stretch">
               <input
                 type="search"
-                class="border-neutral-300 bg-transparent text-neutral-700 focus:text-neutral-700 dark:border-neutral-500 dark:text-neutral-200 dark:placeholder:text-neutral-200 relative m-0 -mr-0.5 block w-[1px] min-w-0 flex-auto rounded-l border border-solid bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none motion-reduce:transition-none dark:focus:border-primary"
+                class="relative m-0 -mr-0.5 block w-[1px] min-w-0 flex-auto rounded-l border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none motion-reduce:transition-none dark:border-neutral-500 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
                 placeholder="Search"
                 aria-label="Search"
                 aria-describedby="button-addon3"
@@ -98,7 +98,7 @@
 
               <!--Search button-->
               <button
-                class="hover:bg-black relative z-[2] rounded-r border-2 border-primary px-6 py-2 text-xs font-medium uppercase text-primary transition duration-150 ease-in-out hover:bg-opacity-5 focus:outline-none focus:ring-0 motion-reduce:transition-none"
+                class="relative z-[2] rounded-r border-2 border-primary px-6 py-2 text-xs font-medium uppercase text-primary transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 motion-reduce:transition-none"
                 type="button"
                 id="button-addon3"
                 data-te-ripple-init
@@ -112,6 +112,172 @@
     </nav>
 
     <div class="container">
+      <div
+        id="carouselExampleCrossfade"
+        class="relative"
+        data-te-carousel-init
+        data-te-ride="carousel"
+      >
+        <!--Carousel indicators-->
+        <div
+          class="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+          data-te-carousel-indicators
+        >
+          <button
+            type="button"
+            data-te-target="#carouselExampleCrossfade"
+            data-te-slide-to="0"
+            data-te-carousel-active
+            class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-te-target="#carouselExampleCrossfade"
+            data-te-slide-to="1"
+            class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-te-target="#carouselExampleCrossfade"
+            data-te-slide-to="2"
+            class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <!--Carousel items-->
+        <div
+          class="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
+        >
+          <!--First item-->
+          <div
+            class="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+            data-te-carousel-fade
+            data-te-carousel-item
+            data-te-carousel-active
+          >
+            <img
+              src="./img/sss-1-2.jpg"
+              class="block w-full"
+              alt="Wild Landscape"
+            />
+          </div>
+          <!--Second item-->
+          <div
+            class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+            data-te-carousel-fade
+            data-te-carousel-item
+          >
+            <img src="./img/sss-2-2.jpg" class="block w-full" alt="Camera" />
+          </div>
+          <!--Third item-->
+          <div
+            class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+            data-te-carousel-fade
+            data-te-carousel-item
+          >
+            <img
+              src="./img/sss-3-2.jpg"
+              class="block w-full"
+              alt="Exotic Fruits"
+            />
+          </div>
+          <div
+            class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+            data-te-carousel-fade
+            data-te-carousel-item
+          >
+            <img
+              src="./img/sss-4-2.jpg"
+              class="block w-full"
+              alt="Exotic Fruits"
+            />
+          </div>
+          <div
+            class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+            data-te-carousel-fade
+            data-te-carousel-item
+          >
+            <img
+              src="./img/sss-5-2.jpg"
+              class="block w-full"
+              alt="Exotic Fruits"
+            />
+          </div>
+          <div
+            class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+            data-te-carousel-fade
+            data-te-carousel-item
+          >
+            <img
+              src="./img/sss-6-2.jpg"
+              class="block w-full"
+              alt="Exotic Fruits"
+            />
+          </div>
+        </div>
+
+        <!--Carousel controls - prev item-->
+        <button
+          class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+          type="button"
+          data-te-target="#carouselExampleCrossfade"
+          data-te-slide="prev"
+        >
+          <span class="inline-block h-8 w-8">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 19.5L8.25 12l7.5-7.5"
+              />
+            </svg>
+          </span>
+          <span
+            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+            >Previous</span
+          >
+        </button>
+        <!--Carousel controls - next item-->
+        <button
+          class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+          type="button"
+          data-te-target="#carouselExampleCrossfade"
+          data-te-slide="next"
+        >
+          <span class="inline-block h-8 w-8">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </span>
+          <span
+            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+            >Next</span
+          >
+        </button>
+      </div>
+
       <h1>About Us</h1>
       <!-- Add the board members with photos and bios here -->
       <div class="card" style="width: 18rem">
