@@ -4,134 +4,243 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Life Is A Theater</title>
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="output.css" rel="stylesheet" />
     <script
       type="text/javascript"
-      src="/node_modules/tw-elements/dist/js/tw-elements.umd.min.js"
+      src="./node_modules/tw-elements/dist/js/tw-elements.umd.min.js"
     ></script>
   </head>
   <body>
-    <header class="p-10">
-      <div class="flex justify-between">
-        <nav
-          class="fixed top-0 flex w-full flex-wrap items-center justify-between p-6"
-        >
-          <div class="text-white mr-6 flex flex-shrink-0 items-center">
+    <!-- Main navigation container -->
+    <nav
+      class="relative top-0 flex w-full flex-nowrap items-center justify-between bg-[#FBFBFB] py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:flex-wrap lg:justify-start lg:py-4"
+    >
+      <div class="flex w-full flex-wrap items-center justify-start px-3">
+        <div class="my-4 mr-2 flex flex-nowrap items-stretch pl-2 text-black">
+          <div>
             <img
-              class="fill-current mr-2 h-8 w-8"
+              class="mr-2 h-8 w-8 fill-current"
               width="54"
               height="54"
               src="img/logo_mini_color.png"
             />
-            <span class="text-xl font-semibold tracking-tight"
-              >Life Is A Theater</span
-            >
           </div>
 
-          <!-- Hamburger button for mobile view -->
-          <!-- <div class="block lg:hidden">
-            <button
-              class="bg-transparent text-neutral-500 dark:text-neutral-200 block border-0 px-2 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden"
-              type="button"
-              data-te-collapse-init
-              data-te-target="#navbarSupportedContent14"
-              aria-controls="navbarSupportedContent14"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="[&>svg]:w-7">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="h-7 w-7"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </span>
-            </button>
-          </div> -->
+          <div class="h-auto self-center">
+            <span class="text-xl font-semibold">Life Is A Theater</span>
+          </div>
+        </div>
 
-          <!-- Collapsible navbar container -->
-          <!-- <div
-            class="!visible mt-2 flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
-            id="navbarSupportedContent14"
-            data-te-collapse-item
-          > -->
-          <!-- Left links -->
-          <!-- <ul
-              class="list-style-none mr-auto flex flex-col pl-0 lg:mt-1 lg:flex-row"
-              data-te-navbar-nav-ref
-            > -->
-          <!-- Home link -->
-          <!-- <li
-                class="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1"
-                data-te-nav-item-ref
-              >
-                <a
-                  class="active disabled:text-black/30 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 lg:px-2"
-                  aria-current="page"
-                  href="#"
-                  data-te-nav-link-ref
-                  >Home</a
-                >
-              </li> -->
-
-          <!-- Link -->
-          <!-- <li
-                class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1"
-                data-te-nav-item-ref
-              >
-                <a
-                  class="text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 p-0 transition duration-200 hover:ease-in-out motion-reduce:transition-none lg:px-2"
-                  href="#"
-                  data-te-nav-link-ref
-                  >Link</a
-                >
-              </li> -->
-
-          <!-- Disabled link -->
-          <!-- <li
-                class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1"
-                data-te-nav-link-ref
-              >
-                <a
-                  class="text-black/30 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 lg:px-2"
-                  >Disabled</a
-                >
-              </li>
-            </ul>
-          </div> -->
-        </nav>
+        <div class="my-4 pl-2 md:my-0 md:pl-2 md:pr-1" data-te-nav-item-ref>
+          <a
+            class="active disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+            aria-current="page"
+            href="#"
+            data-te-nav-link-ref
+            >Home</a
+          >
+        </div>
+        <!-- Features link -->
+        <div class="mb-4 pl-2 md:mb-0 md:pl-0 md:pr-1" data-te-nav-item-ref>
+          <a
+            class="p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 md:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+            href="#"
+            data-te-nav-link-ref
+            >Features</a
+          >
+        </div>
       </div>
-    </header>
+    </nav>
 
-    <main class="m-12 flex flex-col">
-      <div class="flex w-full grow items-center justify-center">
-        <h1 class="mb-5 text-3xl font-semibold">
-          Welcome to Life Is A Theater!
-        </h1>
-      </div>
-      <div class="flex w-full grow items-center justify-center">
-        <!-- Add the organization's introduction and mission here -->
-        <a
-          href="https://drive.google.com/file/d/1BDlqUQf7hcZi9BUwqStdERUxny5FXQb7/view?usp=sharing"
-          class="mb-10 text-lg underline underline-offset-4"
+    <div class="mx-4 my-4 h-auto w-11/12">
+      <div class="flex w-full flex-col items-center justify-center">
+        <div
+          id="carouselExampleCrossfade"
+          class="relative"
+          data-te-carousel-init
+          data-te-ride="carousel"
         >
-          Click here to view out 2023 Show Program!
-        </a>
+          <!--Carousel indicators-->
+          <div
+            class="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+            data-te-carousel-indicators
+          >
+            <button
+              type="button"
+              data-te-target="#carouselExampleCrossfade"
+              data-te-slide-to="0"
+              data-te-carousel-active
+              class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-te-target="#carouselExampleCrossfade"
+              data-te-slide-to="1"
+              class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-te-target="#carouselExampleCrossfade"
+              data-te-slide-to="2"
+              class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+
+          <!--Carousel items-->
+          <div
+            class="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
+          >
+            <!--First item-->
+            <div
+              class="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-fade
+              data-te-carousel-item
+              data-te-carousel-active
+            >
+              <img
+                src="./img/sss-1-2.jpg"
+                class="block w-full"
+                alt="Wild Landscape"
+              />
+            </div>
+            <!--Second item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-fade
+              data-te-carousel-item
+            >
+              <img src="./img/sss-2-2.jpg" class="block w-full" alt="Camera" />
+            </div>
+            <!--Third item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-fade
+              data-te-carousel-item
+            >
+              <img
+                src="./img/sss-3-2.jpg"
+                class="block w-full"
+                alt="Exotic Fruits"
+              />
+            </div>
+            <div
+              class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-fade
+              data-te-carousel-item
+            >
+              <img
+                src="./img/sss-4-2.jpg"
+                class="block w-full"
+                alt="Exotic Fruits"
+              />
+            </div>
+            <div
+              class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-fade
+              data-te-carousel-item
+            >
+              <img
+                src="./img/sss-5-2.jpg"
+                class="block w-full"
+                alt="Exotic Fruits"
+              />
+            </div>
+            <div
+              class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-fade
+              data-te-carousel-item
+            >
+              <img
+                src="./img/sss-6-2.jpg"
+                class="block w-full"
+                alt="Exotic Fruits"
+              />
+            </div>
+          </div>
+
+          <!--Carousel controls - prev item-->
+          <button
+            class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+            type="button"
+            data-te-target="#carouselExampleCrossfade"
+            data-te-slide="prev"
+          >
+            <span class="inline-block h-8 w-8">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-6 w-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </span>
+            <span
+              class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+              >Previous</span
+            >
+          </button>
+          <!--Carousel controls - next item-->
+          <button
+            class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+            type="button"
+            data-te-target="#carouselExampleCrossfade"
+            data-te-slide="next"
+          >
+            <span class="inline-block h-8 w-8">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-6 w-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </span>
+            <span
+              class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+              >Next</span
+            >
+          </button>
+        </div>
+        <div class="">
+          <h1 class="mb-5 text-3xl font-semibold">
+            Welcome to Life Is A Theater!
+          </h1>
+        </div>
+        <div class="">
+          <!-- Add the organization's introduction and mission here -->
+          <a
+            href="https://drive.google.com/file/d/1BDlqUQf7hcZi9BUwqStdERUxny5FXQb7/view?usp=sharing"
+            class="mb-10 text-lg underline underline-offset-4"
+          >
+            Click here to view out 2023 Show Program!
+          </a>
+        </div>
+        <!-- <div class="">
+          <img class="" src="img/logo_full_color.png" />
+        </div> -->
       </div>
-      <div class="flex w-full grow items-center justify-center">
-        <img class="h-auto max-w-xs" src="img/logo_full_color.png" />
-      </div>
-    </main>
+    </div>
 
     <!--Footer container-->
-    <footer class="bg-neutral-900 text-white text-center">
+    <footer class="bg-neutral-900 text-center text-black">
       <div class="w-full px-6 pt-6">
         <div class="mb-6 flex items-center justify-center">
           <!-- <a
@@ -196,7 +305,7 @@
           <a
             href="http://www.instagram.com/lifeisatheaterdfw/"
             type="button"
-            class="border-white text-white hover:bg-black m-1 h-9 w-9 rounded-full border-2 uppercase leading-normal transition duration-150 ease-in-out hover:bg-opacity-5 focus:outline-none focus:ring-0"
+            class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
             data-te-ripple-init
             data-te-ripple-color="light"
           >
